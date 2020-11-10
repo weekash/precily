@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+.layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #222;
+  overflow: hidden;
+}
+.top-layer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.one,
+.two,
+.three {
+  position: relative;
+  min-height: 100px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  width: 100%;
+  height: 100%;
+  background-color: tomato;
+}
+.two {
+  width: 100%;
+  height: 100%;
+  background-color: dodgerblue;
+}
+
+.three {
+  width: 100%;
+  height: 100%;
+  background-color: sandybrown;
+}
+
+.resizer {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  background-color: #222;
+  border-radius: 100%;
+  z-index: +2;
+}
+.top {
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%);
+}
+.bottom {
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+}
+.left {
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+}
+.right {
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+}
+
+.functionality {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 10px;
+}
+.form > * {
+  margin-top: 10px;
+}
+.form input {
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #efefef;
+  padding-left: 5px;
+  outline: none;
+}
+
+.form input:focus {
+  border-color: #3159df;
+}
+.form button {
+  width: 70px;
+  border: 2px solid #222;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #fff;
+}
+.form button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.note {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  color: #222;
+  max-width: 200px;
+}
+.note p {
+  color: #16bd16;
+}
+.note h1 {
+  font-size: 16px;
+}
